@@ -1,5 +1,5 @@
 '''
-Simple test to try integrating percy in selenium
+Simple test to try integrating percy in selenium.
 '''
 
 from selenium import webdriver
