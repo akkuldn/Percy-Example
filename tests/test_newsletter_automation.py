@@ -1,7 +1,12 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from percy import percy_snapshot
 
-driver = webdriver.Chrome()
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+driver = webdriver.Chrome(options=chrome_options)
 
 
 def test_title():
