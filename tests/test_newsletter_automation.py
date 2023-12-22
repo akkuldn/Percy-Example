@@ -9,7 +9,7 @@ def test_title():
 
 	title = driver.title
 
-	assert title == "Home"
+	assert title=="Home"
 
 	percy_snapshot(driver=driver,name="Home page")
 
