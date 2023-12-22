@@ -30,6 +30,5 @@ jobs:
           node-version: '20.x'
       - name: Run Tests
         run: |
-          cd tests/integration
           npm install -g --save-dev @percy/cli
           percy exec -- python -m pytest  tests/test_newsletter_automation.py
